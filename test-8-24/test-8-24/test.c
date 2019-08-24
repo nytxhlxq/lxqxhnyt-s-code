@@ -172,11 +172,12 @@ int Judge_Revolve(char* arr,char* arr1,int sz)
 	{
 		for (i = 0; i < sz; i++)
 		{
-			if (i < len - 1)
+			while (i < len - 1)
 			{
 				tmp = arr[i];
 				arr[i] = arr[i + 1];
 				arr[i + 1] = tmp;
+				i++;
 			}
 		}
 		if (strcmp(arr, arr1) == 0)
