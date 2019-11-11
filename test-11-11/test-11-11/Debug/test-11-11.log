@@ -1,0 +1,28 @@
+﻿生成启动时间为 2019/11/11 20:32:49。
+     1>项目“C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\test-11-11\test-11-11.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\360Downloads\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt TestMain.c
+         TestMain.c
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(99): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(138): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(154): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(203): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(215): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(226): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(248): warning C4018: “>”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(253): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(275): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\seqlist.h(277): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\hashtable.h(24): warning C4028: 形参 1 与声明不同
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\hashtable.h(32): warning C4029: 声明的形参表不同于定义
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\hashtable.h(36): warning C4098: “HashTableInsert”:“void”函数返回值
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\hashtable.h(40): warning C4098: “HashTableInsert”:“void”函数返回值
+     1>c:\users\administrator.pc-201810141417\desktop\码\test-11-11\test-11-11\hashtable.h(22): warning C4716: “Hash”: 必须返回一个值
+       Link:
+         D:\360Downloads\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\Debug\test-11-11.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\Debug\test-11-11.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\Debug\test-11-11.lib" /MACHINE:X86 Debug\TestMain.obj
+         test-11-11.vcxproj -> C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\Debug\test-11-11.exe
+     1>已完成生成项目“C:\Users\Administrator.PC-201810141417\Desktop\码\test-11-11\test-11-11\test-11-11.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.92
