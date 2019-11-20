@@ -1,0 +1,15 @@
+﻿生成启动时间为 2019/11/20 19:53:09。
+     1>项目“C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\c++11-20\c++11-20.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\360Downloads\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+       Link:
+         D:\360Downloads\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\Release\c++11-20.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\Release\c++11-20.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\Release\c++11-20.lib" /MACHINE:X86 /SAFESEH Release\test.obj
+         正在生成代码
+         已完成代码的生成
+         c++11-20.vcxproj -> C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\Release\c++11-20.exe
+     1>已完成生成项目“C:\Users\Administrator.PC-201810141417\Desktop\码\c++11-20\c++11-20\c++11-20.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.77
