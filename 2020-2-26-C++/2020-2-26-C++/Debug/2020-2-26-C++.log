@@ -1,4 +1,4 @@
-﻿生成启动时间为 2020/2/27 12:20:52。
+﻿生成启动时间为 2020/2/28 17:25:50。
      1>项目“D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\2020-2-26-C++\2020-2-26-C++\2020-2-26-C++.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\360Downloads\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
@@ -10,4 +10,4 @@
 
 生成成功。
 
-已用时间 00:00:01.41
+已用时间 00:00:01.51
