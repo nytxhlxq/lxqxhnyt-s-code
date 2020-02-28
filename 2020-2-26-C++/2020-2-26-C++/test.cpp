@@ -67,11 +67,26 @@ void main()
 	}
 	cout << "0ver." <<endl;
 
-	auto it4 = find(mylist0.begin(), mylist0.end(), 3);
+	auto it4 = find(mylist0.begin(), mylist0.end(), 3);//此处的3是指list中的3这个元素，若不存在则指到最后一个节点位置
 	mylist0.insert(it4, 8);//插入所指的位置是一个迭代器
 	for (const auto &e : mylist0)
 	{
 		cout << e << "-->";
 	}
 	cout << "0ver." << endl;
+
+	//mylist0.clear();清除链表
+	
+	auto pos = mylist0.end();//
+	mylist0.erase(--pos);//end指的是最后一个元素的下一个元素，微观上是begin，因此要--pos使它正确指到end上
+	for (const auto &e : mylist0)
+	{
+		cout << e << "-->";
+	}
+	cout << "0ver." << endl;
+	//迭代器失效问题
+	auto pos1 = find(mylist0.begin(), mylist0.end(), 3);
+	//mylist.erase(pos1); cout<<"pos ="<<*pos1<<endl;//此时会出现迭代器失效，出现在删除中间节点的情况中
+	pos = mylist0.erase(pos1);//更新迭代器，则会使pos指向下一个节点,解决失效的问题
+	cout << "pos =" << *pos << endl;
 }
