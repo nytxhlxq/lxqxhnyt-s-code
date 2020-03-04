@@ -1,0 +1,14 @@
+﻿生成启动时间为 2020/3/2 17:00:35。
+     1>项目“C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\2020-2-28-C++\2020-2-28-C++.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\360Downloads\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "list模拟实现.cpp"
+         list模拟实现.cpp
+     1>c:\users\administrator.pc-201810141417\desktop\码\2020-2-28-c++\2020-2-28-c++\list模拟实现.cpp(21): warning C4101: “mylist”: 未引用的局部变量
+       Link:
+         D:\360Downloads\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\Debug\2020-2-28-C++.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\Debug\2020-2-28-C++.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\Debug\2020-2-28-C++.lib" /MACHINE:X86 "Debug\list模拟实现.obj"
+         2020-2-28-C++.vcxproj -> C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\Debug\2020-2-28-C++.exe
+     1>已完成生成项目“C:\Users\Administrator.PC-201810141417\Desktop\码\2020-2-28-C++\2020-2-28-C++\2020-2-28-C++.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.31
