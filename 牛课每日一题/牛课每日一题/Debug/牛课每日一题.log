@@ -1,13 +1,15 @@
-﻿生成启动时间为 2020/3/3 19:28:17。
-     1>项目“C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\牛课每日一题\牛课每日一题.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2020/3/4 18:52:20。
+     1>项目“D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\牛课每日一题\牛课每日一题.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\360Downloads\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
          test.cpp
+     1>d:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\牛课每日一题\test.cpp(36): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\牛课每日一题\test.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
        Link:
-         D:\360Downloads\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\Debug\牛课每日一题.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\Debug\牛课每日一题.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\Debug\牛课每日一题.lib" /MACHINE:X86 Debug\test.obj
-         牛课每日一题.vcxproj -> C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\Debug\牛课每日一题.exe
-     1>已完成生成项目“C:\Users\Administrator.PC-201810141417\Desktop\码\牛课每日一题\牛课每日一题\牛课每日一题.vcxproj”(Build 个目标)的操作。
+         D:\360Downloads\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\Debug\牛课每日一题.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\Debug\牛课每日一题.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\Debug\牛课每日一题.lib" /MACHINE:X86 Debug\test.obj
+         牛课每日一题.vcxproj -> D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\Debug\牛课每日一题.exe
+     1>已完成生成项目“D:\nyt一点也不喜欢lxq的代码库\lxqxhnyt-s-code\牛课每日一题\牛课每日一题\牛课每日一题.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.19
+已用时间 00:00:01.34
