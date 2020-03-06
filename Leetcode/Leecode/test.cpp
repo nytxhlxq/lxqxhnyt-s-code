@@ -2,7 +2,32 @@
 #include<vector>
 #include<map>
 #include<algorithm>
+#include<stdbool.h>
 using namespace std;
+//https://leetcode-cn.com/problems/search-a-2d-matrix-ii/ 240.搜索二维矩阵 II
+//取左下元素逐个比较，大于target减去一排，小于target减去一列
+bool searchMatrix(int** matrix, int matrixRowSize, int matrixColSize, int target)
+{
+	if (matrixRowSize == 1 && matrixColSize == 1)
+	{
+		if (matrix[0][0] == target)
+			return true;
+		else
+			return false;
+	}
+	int i = 0;
+	int j = matrixColSize - 1;
+	while (i <= matrixRowSize - 1 && j >= 0)
+	{
+		if (target > matrix[matrixRowSize - 1 - i][matrixColSize - 1 - j])
+			j--;
+		else if (target < matrix[matrixRowSize - 1 - i][matrixColSize - 1 - j])
+			i++;
+		else
+			return true;
+	}
+	return false;
+}
 //https://leetcode-cn.com/problems/majority-element/ 169.多数元素
 //剑指offer方法（时间复杂度o(n)）
 int majorityElement(int* nums, int numsSize)
