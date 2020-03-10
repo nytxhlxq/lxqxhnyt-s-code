@@ -4,6 +4,31 @@
 #include<algorithm>
 #include<stdbool.h>
 using namespace std;
+//https://leetcode-cn.com/problems/merge-sorted-array/ 88.合并两个有序数组
+//合并再排序
+void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
+{
+	for (int i = 0; i < nums2.size(); ++i)
+	{
+		nums1[m + i] = nums2[i];
+	}
+	sort(nums1.begin(), nums1.end());
+}
+//从后向前遍历两个数组，大的往后放，最后把nums2剩余的元素放最前面（如果有的话）
+void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
+{
+	int n1 = m - 1;
+	int n2 = n - 1;
+	int n3 = n + m - 1;
+	while (n1 >= 0 && n2 >= 0)
+	{
+		nums1[n3--] = nums1[n1] > nums2[n2] ? nums1[n1--] : nums2[n2--];
+	}
+	while (n2 >= 0)
+	{
+		nums1[n3--] = nums2[n2--];
+	}
+}
 //https://leetcode-cn.com/problems/search-a-2d-matrix-ii/ 240.搜索二维矩阵 II
 //取左下元素逐个比较，大于target减去一排，小于target减去一列
 bool searchMatrix(int** matrix, int matrixRowSize, int matrixColSize, int target)
@@ -78,7 +103,6 @@ void main()
 	system("pause");
 }
 //https://leetcode-cn.com/problems/single-number/ 136.只出现一次的数
-/*
 //异或法（不开辟额外空间）(C/C++皆可)
 int singleNumber(int *nums,int numsSize)
 {
@@ -131,6 +155,7 @@ int singleNumber(int* nums,int numsSize)
 		else
 			return nums[i];
 	}
+	*/
 	
 }
 
@@ -143,4 +168,3 @@ void main()
 	cout << ret << endl;
 	system("pause");
 }
-*/
