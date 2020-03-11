@@ -4,6 +4,34 @@
 #include<algorithm>
 #include<stdbool.h>
 using namespace std;
+//https://leetcode-cn.com/problems/merge-two-sorted-lists/ 21.合并两个有序链表
+//用递归的思想，判断l1和l2的头哪一个值更小，就让它作为头开始，它的next就会成为新的头，然后不断比较头结点的大小，形成链
+ struct ListNode 
+{
+	int val;
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
+};
+class Solution {
+public:
+	ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)
+	{
+		if (l1 == NULL)
+			return l2;
+		if (l2 == NULL)
+			return l1;
+		if (l1->val < l2->val)
+		{
+			l1->next = mergeTwoLists(l1->next, l2);
+			return l1;
+		}
+		else
+		{
+			l2->next = mergeTwoLists(l1, l2->next);
+			return l2;
+		}
+	}
+};
 //https://leetcode-cn.com/problems/merge-sorted-array/ 88.合并两个有序数组
 //合并再排序
 void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
