@@ -4,6 +4,19 @@
 #include<algorithm>
 #include<stdbool.h>
 using namespace std;
+//https://leetcode-cn.com/problems/super-egg-drop/ 887.鸡蛋掉落
+int superEggDrop(int K, int N)
+{
+	vector<vector<int>> dp(N + 1, vector<int>(K + 1, 0));
+	int m = 0;
+	while (dp[m][K] < N)
+	{
+		m++;
+		for (int k = 1; k <= K; ++k)
+			dp[m][k] = dp[m - 1][k - 1] + dp[m - 1][k] + 1;
+	}
+	return m;
+}
 //https://leetcode-cn.com/problems/merge-two-sorted-lists/ 21.合并两个有序链表
 //用递归的思想，判断l1和l2的头哪一个值更小，就让它作为头开始，它的next就会成为新的头，然后不断比较头结点的大小，形成链
  struct ListNode 
