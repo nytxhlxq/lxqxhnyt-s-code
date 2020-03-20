@@ -14,7 +14,6 @@ int main()
 	const   int        const *    x = &y;      //内存不可变，值不可改变
 }
 
-
 int main()
 {
 	int x, y;
@@ -29,6 +28,7 @@ int main()
 	case 2:{};
 	}
 }
+
 struct A
 {
 	char a;
