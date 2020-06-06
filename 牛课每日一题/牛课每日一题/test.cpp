@@ -3,6 +3,21 @@
 #include<string>
 #include<algorithm>
 using namespace std;
+//2020.6.4
+//1.养兔子
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n = 0;
+	long arr[91] = { 1, 1 };
+	for (int i = 2; i <= 90; i++)
+		arr[i] = arr[i - 1] + arr[i - 2];
+	while (cin >> n){
+		cout << arr[n] << endl;
+	}
+	return 0;
+}
 //2020.6.1
 //1.美国接日
 int WeekToDay(int y, int m, int c, int w, bool B)
