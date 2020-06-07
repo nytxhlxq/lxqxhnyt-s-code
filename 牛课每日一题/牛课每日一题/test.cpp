@@ -3,6 +3,48 @@
 #include<string>
 #include<algorithm>
 using namespace std;
+//2020.6.6
+//Pre-Post
+string pre, post;
+const int maxn = 25;
+long long f[maxn], m;
+void init()
+{
+	f[0] = 1;
+	for (int i = 1; i < maxn; i++)
+	{
+		f[i] = f[i - 1] * i;
+	}
+}
+long long cal(int preL, int preR, int postL, int postR)
+{
+	int left1 = preL + 1, left2 = postL, len, res = 1, cnt = 0;
+	if (preL > preR) 
+		return 1;
+	for (int i = left2; i < postR; i++)
+	{
+		if (post[i] == pre[left1])
+		{
+			len = i - left2 + 1;
+			cnt++;
+			res *= cal(left1, left1 + len - 1, left2, left2 + len - 1);
+			left1 += len;
+			left2 += len;
+		}
+	}
+	return f[m] / f[cnt] / f[m - cnt] * res;
+}
+int main()
+{
+	init();
+	while (cin >> m && m)
+	{
+		cin >> pre >> post;
+		cout << cal(0, pre.size() - 1, 0, post.size() - 1) << endl;
+	}
+	return 0;
+}
+
 //2020.6.5
 //³­ËÍÁÐ±í
 int main()
