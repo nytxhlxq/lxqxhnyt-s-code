@@ -2,7 +2,55 @@
 #include<vector>
 #include<string>
 #include<algorithm>
+#include <fstream>
 using namespace std;
+//2020.6.7
+//1.数据库连接池：相当于就是计算最大需要连接几次。
+int main()
+{
+	int n;
+	while (cin >> n)
+	{
+		int count = 0, max_count = 0;
+		string id, method;
+		while (n--)
+		{
+			cin >> id >> method;
+			if (method == "connect")     ++count;
+			if (method == "disconnect")  --count;
+			if (count>max_count)        max_count = count;
+		}
+		cout << max_count << endl;
+	}
+	return 0;
+}
+//2.mkdir
+int main()
+{
+	int n;
+	while (cin >> n)
+	{
+		vector<string> list(n);
+		vector<bool> flag(n, true);
+		for (int i = 0; i < n; ++i) 
+			cin >> list[i];
+		sort(list.begin(), list.end());
+		for (int i = 0; i < list.size() - 1; ++i)
+		{
+			// 1、两串相同
+			// 2、前串是后串的子串，而且后串后一位是 '/'
+			if (list[i] == list[i + 1]) 
+				flag[i] = false;
+			else if (list[i].size() < list[i + 1].size() && list[i] == list[i + 1].substr(0, list[i].size()) && list[i + 1][list[i].size()] == '/')
+				flag[i] = false;
+		}
+		for (int i = 0; i < list.size(); ++i)
+		   if (flag[i]) 
+		      cout << "mkdir -p " << list[i] << endl;
+		cout << endl;
+	}
+	return 0;
+}
 //2020.6.6
 //Pre-Post
 string pre, post;
