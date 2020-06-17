@@ -5,6 +5,34 @@
 #include <fstream>
 #include<stack>
 using namespace std;
+//2020.6.17
+//求和（输入一个数，输出所有两数相加得它的情况）
+void help(int n, int m, vector<int>& v, int beg) 
+{
+	//if (beg>n) return;
+	if (m == 0) {
+		for (int i = 0; i<v.size(); i++) 
+		{
+			i == 0 ? cout << v[i] : cout << " " << v[i];
+		}
+		cout << endl;
+	}
+	for (int i = beg; i <= n&&i <= m; i++) 
+	{
+		v.push_back(i);
+		help(n, m - i, v, i + 1);
+		v.pop_back();
+	}
+}
+int main() 
+{
+	int n, m;
+	while (cin >> n >> m) 
+	{
+		vector<int>v;
+		help(n, m, v, 1);
+	}
+}
 //2020.6.16
 //骆驼命名法：say_hello_to_world -> sayHelloToWorld
 int main()
