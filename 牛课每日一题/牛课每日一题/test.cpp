@@ -215,7 +215,8 @@ int main()
 				{   
 					//跳过起点
 					P[i][j] = P[i - 1][j] * (j == m ? 1 : 0.5) + P[i][j - 1] * (i == n ? 1 : 0.5);//边界的时候，概率为1
-					if (table[i][j] == 1) P[i][j] = 0;//如果该点有蘑菇，概率置为0
+					if (table[i][j] == 1) 
+						P[i][j] = 0;//如果该点有蘑菇，概率置为0
 				}
 			}
 		}
@@ -234,9 +235,12 @@ int main()
 		while (n--)
 		{
 			cin >> id >> method;
-			if (method == "connect")     ++count;
-			if (method == "disconnect")  --count;
-			if (count>max_count)        max_count = count;
+			if (method == "connect")     
+				++count;
+			if (method == "disconnect")  
+				--count;
+			if (count>max_count)        
+				max_count = count;
 		}
 		cout << max_count << endl;
 	}
@@ -368,7 +372,8 @@ int main()
 	long arr[91] = { 1, 1 };
 	for (int i = 2; i <= 90; i++)
 		arr[i] = arr[i - 1] + arr[i - 2];
-	while (cin >> n){
+	while (cin >> n)
+	{
 		cout << arr[n] << endl;
 	}
 	return 0;
@@ -400,7 +405,8 @@ int WeekToDay(int y, int m, int c, int w, bool B)
 	return d;
 }
 
-int main(void){
+int main(void)
+{
 	int y;
 	while (cin >> y)
 	{
